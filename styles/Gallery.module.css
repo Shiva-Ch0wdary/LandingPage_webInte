@@ -1,0 +1,55 @@
+.gallery {
+    padding: 2rem;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .images img {
+    width: 420px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+  
+  .lightbox.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  .lightbox button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

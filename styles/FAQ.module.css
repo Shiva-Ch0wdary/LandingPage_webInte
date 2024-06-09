@@ -1,0 +1,84 @@
+/* FAQ.module.css */
+
+#faq {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#faq h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+}
+
+.faq-box.white-bg {
+  background-color: #fff;
+}
+
+.faq-box.red-bg {
+  background-color: #ff6a00;
+}
+
+.faq-box h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #000000;
+}
+
+.faq-box p {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.content h2 {
+  font-size: 3.3em; 
+}
+
+.content p {
+  font-size: 2.1em; 
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  #faq {
+    padding: 70px 20px;
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout for wider screens */
+    gap: 30px; /* Increased gap between items for wider screens */
+  }
+
+  .faq-box {
+    padding: 30px; /* Increased padding for wider screens */
+  }
+
+  .faq-box h3 {
+    font-size: 2em; /* Increased font size for wider screens */
+  }
+
+  .content h2 {
+    font-size: 4em; /* Increased font size for wider screens */
+  }
+
+  .content p {
+    font-size: 2.5em; /* Increased font size for wider screens */
+  }
+}

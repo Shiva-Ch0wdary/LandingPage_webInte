@@ -1,0 +1,86 @@
+/* Hero.module.css */
+
+.hero {
+  display: grid;
+  grid-template-areas: 
+    "text image1"
+    "image2 image2";
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 50px;
+}
+
+.heroText {
+  grid-area: text;
+}
+
+.heroImage1 img,
+.heroImage2 img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.heroImage1 {
+  grid-area: image1;
+}
+
+.heroImage2 {
+  grid-area: image2;
+}
+
+.heroText h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.heroText p {
+  font-size: 1.2em;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex; 
+  align-items: baseline; 
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+} 
+
+.buttons a.watchVideo {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 70px;
+  }
+
+  .heroText h1 {
+    font-size: 3em; /* Increased font size for wider screens */
+  }
+
+  .heroText p {
+    font-size: 1.5em; /* Increased font size for wider screens */
+  }
+
+  .buttons a {
+    padding: 12px 24px; /* Increased padding for wider screens */
+  }
+}
